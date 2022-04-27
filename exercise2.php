@@ -5,41 +5,41 @@
 <p>
 	"Question 1: What is the name of the Emporer?:"
 	<br>
-	Your Answer: <?php echo $_POST['em']; ?>
+	You Answered: <?php echo $_POST['em']; ?>
 	<br>
-	Coreect Answer: Karl Franz
+	Correct Answer: Karl Franz
 	<br>
 </p>
 <p>
 	Question 2: Who is the founder of the Empire?:
 	<br>
-	Your Answer: <?php echo $_POST['fo']; ?>
+	You Answered: <?php echo $_POST['fo']; ?>
 	<br>
-	Coreect Answer: Sigmar
+	Correct Answer: Sigmar
 	<br>
 </p>
 <p>
 	Question 3: What is the continent the Empire is in?:
 	<br>
-	Your Answer: <?php echo $_POST['co']; ?>
+	You Answered: <?php echo $_POST['co']; ?>
 	<br>
-	Coreect Answer: The Old World
+	Correct Answer: The Old World
 	<br>
 </p>
 <p>
 	Question 4: What is the warhammer on the Empire's flag?:
 	<br>
-	Your Answer: <?php echo $_POST['wa']; ?>
+	You Answered: <?php echo $_POST['wa']; ?>
 	<br>
-	Coreect Answer: Heldenhammer
+	Correct Answer: Heldenhammer
 	<br>
 </p>
 <p>
 	Question 5: What nation from history is the Empire based on?
 	<br>
-	Your Answer: <?php echo $_POST['hi']; ?>
+	You Answered: <?php echo $_POST['hi']; ?>
 	<br>
-	Coreect Answer: Holy Roman Empire
+	Correct Answer: Holy Roman Empire
 	<br>
 </p>
 <p>
