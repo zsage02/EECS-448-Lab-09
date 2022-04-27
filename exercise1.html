@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+	<h1>Exercise01: Multiplication Table</h1>
+    </head>
+    <body>
+        <div id="result"></div>
+ 
+        <script>
+            function multiplicationTable() {
+            var table;
+            table='<table>';
+ 
+            for(i=0;i<=100;i++){
+             table+='<tr>';
+              for(num=0;num<=100;num++){
+              		if(i == 0 && num == 0)
+                    {
+                    	table+='<th> </th>';
+                    }
+                    else if (i==0)
+                    {
+                   		table+='<th>'+num+'</th>';
+                    }
+                    else if (num == 0)
+                    {
+                  		table+='<th>'+i+'</th>';
+                    }
+					else
+                    {
+                    	table+='<td>'+num*i+'</td>';
+                    }
+
+               }
+               table+='</tr>';
+              }
+ 
+            table+='</table>';
+            document.getElementById("result").innerHTML = table;
+            }
+            multiplicationTable();
+        </script>
+    </body>
+</html>

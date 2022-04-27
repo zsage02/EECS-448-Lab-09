@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="formChecker.js">
+	</script>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<div class="header">
+  <h1>EECS 448 Lab 08 Sage's Website</h1>
+</div>
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="exercise1.html">Exercise01</a>
+  <a href="exercise2.html">Exercise02</a>
+  <a href="customerFrontend.html">Exercise03</a>
+</div>
+
+<div class="row">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+.leftcolumn {   
+  float: left;
+  width: 50%;
+}
+
+.rightcolumn {
+  float: left;
+  width: 50%;
+  padding-left: 20px;
+}
+
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+.card {
+  background-color: grey;
+  padding: 20px;
+  margin-top: 20px;
+  border: #990000;
+  border-width: 5px;
+  border-style: solid;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="row">
+  <div class="leftcolumn">
+<table>
+<thead>
+	<tr>
+ 		 <th>Imperial Catalog:</th>
+	</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+  <img src="warhammer.jpg" alt="warhammer" width="200px" height="200px">
+  <br>
+  <p>Warhammer for fighting the Empire's foes</p>
+  <p>$30.00</p>
+</td>
+<td>
+    <img src="armor.jpg" alt="armor" width="200px" height="200px">
+  <br>
+  <p>Armor to protect you from the Empire's foes</p>
+  <p>$100.00</p>
+</td>
+<td>
+   <img src="horse.jpg" alt="horse" width="300px" height="200px">
+  <br>
+  <p>Horse for running from/at the Empire's foes</p>
+  <p>$50.00</p>
+</td>
+</tr>
+</tbody>
+</table>
+  </div>
+  <div class="rightcolumn">
+  <h2> Form: </h2>
+  <form action="customerBackend.php" method="post" onsubmit="return responseCheckr()">
+  <h3> Account: </h3>
+  <label>Email:<input type="text" name="email"></label>
+  <br>
+  <br>
+  <label>Password: <input type="password" name="password"></label>
+  <h3> Item Selection: </h3>
+  <label>Weapons:<input type="text" name="weapons"></label>
+  <br>
+  <br>
+  <label>Armor:<input type="text" name="armor"></label>
+  <br>
+  <br>
+  <label>Horses:<input type="text" name="horses"></label>
+  <h3> Shipping: </h3>
+  	<label>
+	<input type ="radio" name="sd" value="7 Days">Free:  Seven days
+	</label>
+	<br>
+	<label>
+	<input type ="radio" name="sd" value="Over night">$50.00: Over night
+	</label>
+	<br>
+	<label>
+	<input type ="radio" name="sd" value="3 Days">$5.00: Three days
+	</label>
+	<br>
+    	 <br>
+	<button type="reset">Reset Order</button> 
+	<input type="submit" value="Submit Order">
+  </form>
+  </div>
+</div>
+
+</body>
+</html>
